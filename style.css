@@ -47,12 +47,20 @@ color: rgb(25, 116, 96);
     margin-right: 20px;
 }
 
-/* .input-field{
-    position: relative;
-} */
-
 .input-field i {
-    color:#5aa066;
-    /* position: absolute; */
-    
+    color:#5aa066;    
+}
+
+.counts article{
+color: white;
+font-size: 25px;
+
+}
+
+.increment {
+    color: orange;
+}
+
+.label {
+    font-size: 15px;
 }
