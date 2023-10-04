@@ -39,10 +39,20 @@ color: rgb(25, 116, 96);
 }
 
 .villa {
-    width:700px;
+    width:600px;
     height: 300px;
     border-radius: 20px;
     float: right;
     margin-bottom:20px;
     margin-right: 20px;
+}
+
+/* .input-field{
+    position: relative;
+} */
+
+.input-field i {
+    color:#5aa066;
+    /* position: absolute; */
+    
 }
