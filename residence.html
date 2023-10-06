@@ -23,19 +23,22 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- JQUERY SCRIPT LINK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <title>Real Estate Website</title>
   </head>
 
   <body class="residence-page">
     <!--remember to add a blog page-->
 
-    <main class="container-fluid mt-2">
+    <main class="container mt-2">
       <h4>Best Choice</h4>
       <h2>Popular Residence.</h2>
 
-      <div class="container d-flex">
-        <div class="row row-cols-2 row-cols-md-5 g-4 ms-5">
-          <div class="col-6">
+      <div class="container">
+        <div class="card-content row row-cols-1 row-cols-md-5 g-4 ms-5 mb-5">
+          <div class="col ">
             <div class="card">
               <img class="card-img-top" src="images/villa1.jpeg" alt="villa" />
               <div class="card-body">
@@ -183,7 +186,96 @@
             </div>
           </div>
         </div>
+
+        <div class="pagination">
+          <!-- <ul class="d-flex">
+            <li class="page-item previous-page disable">
+              <a class="page-link" href="#">Prev</a>
+            </li>
+            <li class="page-item current-page active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item dots">
+              <a class="page-link" href="#">...</a>
+            </li>
+            <li class="page-item current-page">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item current-page">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item next-page">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul> -->
+        </div>
       </div>
     </main>
+
+    <script type="text/javascript">
+function getPageList(totalPages, page, maxLength){
+  function range(start, end){
+    return Array.from(Array(end-start+1), (_, i) => i +start);
+  }
+    var sideWidth = maxLength < 9 ? 1 : 2;
+    var leftWidth = (maxLength - sideWidth * 2 -3) >> 1;
+    var rightWidth = (maxLength - sideWidth * 2 -3) >> 1;
+
+    if (totalPages <= maxLength){
+      return range(1, totalPages);
+    }
+if (page <=maxLength - sideWidth - 1 -rightWidth ){
+  return range(1, maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1, totalPages ));
+}
+if(page >= totalPages - sideWidth - 1 - rightWidth){
+  return range(1, sideWidth).concat(0, range(totalPages - sideWidth - 1 - rightWidth - leftWidth, totalPages));
+}
+
+return range(1, sideWidth).concat(0, range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages));
+}
+
+$(function(){
+var numberOfItems = $(".card-content .col").length;
+var limitPerPage = 3; //how many card items visible per page
+var totalPages = Math.ceil(numberOfItems / limitPerPage);
+var paginationSize = 2; //how many page elements visible in the pagination
+var currentPage;
+
+function showPage(whichPage){
+  if(whichPage < 1 || whichPage > totalPages) return false;
+  currentPage = whichPage;
+
+  $(".card-content .col").hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
+
+  $(".pagination ul li").slice(1, -1).remove();
+
+  getPageList(totalPages, currentPage, paginationSize).forEach(item => {
+$("<ul>").addClass("d-flex").append($("<li>").addClass("page-item ").addClass(item ? " current-page" : "dots")
+  .toggleClass("active",item === currentPage)).append($("<a>").addClass("page-link")
+    .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page");
+  });
+
+
+$(".previous-page").toggleClass("disable", currentPage === 1);
+$(".next-page").toggleClass("disable", currentPage === totalPages);
+return true;
+}
+
+$(".pagination").append(
+  $("<ul>").addClass("d-flex").append(
+    $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)" }).text("Prev")), 
+      $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)" }).text("Next")), 
+
+      )
+);
+
+$(".card-content").show();
+showPage(1);
+ 
+$(document).on("click", ".pagination ul li.current-page:not(.active)", function(){
+return showPage(+$(this).text()); 
+});
+});
+    </script>
   </body>
 </html>
