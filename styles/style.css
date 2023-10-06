@@ -105,7 +105,8 @@ h2 {
 }
 
 .card {
-  max-width: 50%;
+  max-height: 20%;
+  width: 50%;
   border-radius: 6px;
   background: #fff;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0), 0 0 6px rgba(0, 0, 0, 0.05);
@@ -125,58 +126,50 @@ h2 {
   max-width: fit-content;
 }
 
-.pagination {
-  text-align: center;
-  margin: 10px 30px 60px;
-  /* user-select: none; */
+.swiperResidence .swiper-slide {
+  justify-content: center;
+  width:auto;
+  align-items: center;
 }
 
-.pagination ul li {
-  display: inline-block;
-  margin: 5px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '',
 }
 
-.pagination ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2em;
-  line-height: 45px;
-}
+ .swiper-button-next,
+ .swiper-button-prev {
+  /* top:initial; */
+  /* bottom:0; */
+  width:initial;
+  height:initial;
+  background-color: #ccc;
+  border:2px solid black;
+  padding:6px;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  color: blue;
+ }
 
-.previous-page,
-.next-page {
-  color: orange;
-  border-radius: 45px;
-  width: 80px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
+ .swiper-button-prev{
+  left:10px;
+  left:calc(50% - .3rem);
+ }
 
-.previous-page:hover {
-  transform: translateX(-5px);
-}
+ .swiper-button-next{
+  right: 10px;
+  right:calc(50% - .3rem);
+ }
+ /* .container {
+  width:40%;
+  border-color:black;
+  height:50%;
+ } */
 
-.next-page :hover {
-  transform: translateX(-5px);
-}
+ .card-body p {
+  width: 90%;
+ }
 
-.current-page,
-.dots {
-  background: #ccc;
-  width: 45px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.active {
-  background: green;
-}
-
-.disable {
-  background: #ccc;
-}
-
-.card-content {
-  display: none;
-}
+ .swiperResidence{
+  height: 80%;
+ }
