@@ -105,13 +105,13 @@ h2 {
 }
 
 .card {
-    height: 300px;
+  max-width: 50%;
   border-radius: 6px;
   background: #fff;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0), 0 0 6px rgba(0, 0, 0, 0.05);
- transition: 0.3s, transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+  transition: 0.3s, transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
     0.3s box-shadow,
-    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12); 
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
   cursor: pointer;
   border-color: #fff;
 }
@@ -122,17 +122,13 @@ h2 {
 }
 
 .card img {
-    margin:4px;
-    border-radius: 7px;
-    width:95%;
+  max-width: fit-content;
 }
 
-
-
-.pagination{
+.pagination {
   text-align: center;
   margin: 10px 30px 60px;
-  user-select: none;
+  /* user-select: none; */
 }
 
 .pagination ul li {
@@ -144,30 +140,32 @@ h2 {
 .pagination ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2em ;
+  font-size: 1.2em;
   line-height: 45px;
 }
 
-.previous-page, .next-page {
-color: orange;
-border-radius: 45px;
-width: 80px;
-cursor: pointer;
-transition: 0.3s ease;
+.previous-page,
+.next-page {
+  color: orange;
+  border-radius: 45px;
+  width: 80px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.previous-page:hover{
+.previous-page:hover {
   transform: translateX(-5px);
 }
 
-.next-page :hover{
+.next-page :hover {
   transform: translateX(-5px);
 }
 
-.current-page, .dots {
+.current-page,
+.dots {
   background: #ccc;
-  width:45px;
-  border-radius:50%;
+  width: 45px;
+  border-radius: 50%;
   cursor: pointer;
 }
 
