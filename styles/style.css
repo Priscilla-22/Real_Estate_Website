@@ -79,7 +79,7 @@
   opacity: 1;
 }
 
-h3 {
+.company-name h3 {
   color: rgb(51, 167, 128);
   font-size: 15px;
 }
@@ -92,11 +92,11 @@ h3 {
   padding: 0;
 }
 
-h4 {
+.residence-body h4 {
   color: rgb(204, 160, 79);
 }
 
-h2 {
+.residence-body h2 {
   color: rgb(29, 29, 54);
 }
 
@@ -173,3 +173,39 @@ h2 {
  .swiperResidence{
   height: 80%;
  }
+
+
+ /**** VALUE CSS ****/
+
+ .value-page{
+  background-color:white;
+  margin:0;
+  padding:0;
+ }
+ /* .value-content{
+  text-align:center;
+ } */
+
+.value-content h3{
+  color:orange;
+  margin-bottom:10px;
+}
+
+.value-content h2 {
+  color:rgb(20, 20, 32);
+  font-size:40px;
+  font-weight:500;
+  margin-bottom:20px;
+}
+
+.value-content p{
+  font-size:15px;
+  width:400px;
+  margin-bottom:200px;
+}
+.value-content img{
+  margin-top:200px;
+ height:90%;
+ width:55%;
+ border-radius: 44% 36% 24% 44% / 0% 48% 4% 19%; 
+}
