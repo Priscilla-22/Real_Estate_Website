@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS/ JS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
 
     <!--FontAwesome-->
     <link
@@ -32,121 +37,107 @@
   <body class="value-page">
     <main>
       <div class="container-fluid d-flex value-content">
-        <img class="ms-5" src="images/value-image.jpg" alt="villa image" />
+        <img class="ms-5 mb-4" src="images/value-image.jpg" alt="villa image" />
 
-        
-        
-        <div class="value-info mt-5 ms-5">
-          <h3>Our Value</h3>
-          <h2>Value We Give To You</h2>
-          <p>
-            Makao Cares places a premium on delivering value to its customers in
-            the real estate market. Their commitment to excellence is evident in
-            every aspect of their service, from selecting prime locations to
-            providing exceptional customer care. With Makao Cares, customers can
-            trust that their real estate investments are in capable hands.
-          </p>
-        </div>
+        <div class="row row-cols-2 justify-content-end">
+          <div class="value-info mt-5">
+            <h3>Our Value</h3>
+            <h2>Value We Give To You</h2>
+            <p>
+              Makao Cares places a premium on delivering value to its customers
+              in the real estate market. Their commitment to excellence is
+              evident in every aspect of their service, from selecting prime
+              locations to providing exceptional customer care. With Makao
+              Cares, customers can trust that their real estate investments are
+              in capable hands.
+            </p>
+          </div>
 
-       
-      </div> <div class="accordion mt-5" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
+          <div class="col accordion box-shadow-accordion" id="accordionValue">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  <i class="bi bi-shop-window accordion-icon m-2"></i>
+                  <strong>Best Interest Rates On The Market</strong>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionValue"
               >
-                Accordion Item #1
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth noting that
-                just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                <div class="accordion-body">
+                  Discover unbeatable interest rates in the market, helping you
+                  achieve your dream of homeownership without breaking the bank.
+                  Our competitive financing options.
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <i class="bi bi-reception-3 accordion-icon m-2"></i>
+                  <strong> Prevent Unstable Prices</strong>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionValue"
               >
-                Accordion Item #2
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                <div class="accordion-body ms-5">
+                  Rest assured with price stability when you choose us for your
+                  real estate needs. Our experienced team employs expert market
+                  analysis and strategic pricing strategies.
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <i class="bi bi-tags accordion-icon m-2"></i>
+                  <strong>Best Prices On The Market</strong>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionValue"
               >
-                Accordion Item #3
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                <div class="accordion-body">
+                  Seek no further for the best property prices on the market. We
+                  pride ourselves on offering competitive rates, allowing you to
+                  maximize the value .
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </main>
   </body>
 </html>
