@@ -271,24 +271,24 @@
   color:black;
   font-size: 17px;
   font-weight: 300;
-  width: 500px;
-  margin-bottom:80px;
+  width: 100%;
+  max-width:70%;
+  margin-bottom:30px;
 
 }
 
-.contact-content img{
- margin-top:100px;
-  height: auto;
-  width: 50%;
+.contact-info img{
+ margin-top:80px;
+  height: 100%;
+  width: 100%;
   max-width: 100%;
  border-radius: 52% 47% 10% 10% / 41% 41% 2% 0%  ; 
 }
 
-.content-cards .card {
-  width: 100%;
+.cards-wrapper .card {
+  width: 15rem;
 }
 
-.content-cards .card-body {
-  padding: 10px;
-}
-
+/* .content-cards .card-body {
+  padding-right: 0;
+} */
