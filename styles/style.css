@@ -219,18 +219,23 @@ background-color: white;
 }
 
 .value-info p{
+  max-width:100%;
   font-size:15px;
   width:480px;
   margin-bottom:20px ;
 }
 
-.value-content img{
+.value-content .value-img{
+  max-width:100%;
+  width: 620px;
+  height: 500px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  float:left;
   margin-top:100px;
- height:90%;
- width: 100%;
- max-width:55%;
  border-radius: 44% 36% 24% 44% / 0% 48% 4% 19%; 
 }
+
 
 .accordion {
   width: 100%; 
@@ -242,7 +247,6 @@ background-color: white;
 }
 
 .accordion-body{
-  width: 400px;
  align-content: center;
 }
 
