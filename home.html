@@ -27,16 +27,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Real Estate Website</title>
   </head>
   <body class="home-page">
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid home-content">
-        <a class="nav-bar brand" 
+    <nav class="navbar navbar-expand-lg mb-5">
+      <div class="container-fluid">
+        <h1 class="nav-bar brand" 
           ><strong>MAKAO</strong>
           <img src="images/icon.jpeg" alt="Makao icon" ">
-        </a>
+      </h1>
         <div class="collapse navbar-collapse show" id="navbarContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
             <li class="nav-item">
@@ -66,8 +66,8 @@
     </nav>
 
     <main>
-      <div class="container-fluid bodyContent">
-        <h1 class="ms-lg-5">Discover <br />Most Suitable <br />Housing</h1>
+      <div class="container-fluid bodyContent ">
+        <h1 class="ms-lg-5">Discover Most Suitable <br />Housing</h1>
         <img
           class="villa"
           src="images/luxury-real-estate.jpg"
@@ -88,13 +88,18 @@
           begins here.
         </p>
         <form class="input-field d-flex col-md-3">
-          <i class="fa-solid fa-location-dot"></i>
-          <input
-            class="form-control me-3 ms-5"
-            type="search"
-            placeholder="Name of the location"
-            aria-label="search"
-          />
+
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-geo-alt-fill"></i>
+            </span>
+            <input
+              class="form-control me-3"
+              type="search"
+              placeholder="Name of the location"
+              aria-label="search"
+            />
+          </div>
+
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
 

@@ -1,11 +1,11 @@
 /* HOME PAGE CSS */
 .home-page {
-  background-color: rgb(41, 39, 39);
+  background-color: rgb(20, 19, 19);
   margin: 0;
   padding: 0;
 }
 
-.home-content .brand {
+.brand {
   text-decoration: none;
   color: rgb(25, 116, 96);
   font-size: 30px;
@@ -44,10 +44,31 @@
   margin-bottom: 20px;
   margin-right: 20px;
 }
+.input-field{
+  margin-left: 8%;
+}
+.input-group{
+  width: 100%;
+}
 
-.input-field i {
+.input-group input {
+  border-radius: 0 5px 5px 0;
+  border: none;
+}
+
+/* Remove the highlight when input is focused */
+.input-group input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Style for the icon inside the input group */
+.input-group-text {
+background-color: white;
+  border:none;
   color: #5aa066;
 }
+
 
 .counts article {
   color: white;
@@ -68,14 +89,11 @@
 }
 
 .company-info {
-  /* filter: blur(3px); */
-  /* transition: filter 0.2s ease-in-out; */
   opacity: 0.2;
   transition: opacity 0.2s;
 }
 
 .company-info:hover {
-  /* filter: none; */
   opacity: 1;
 }
 
@@ -183,8 +201,9 @@
   padding:0;
  }
  .value-info{
-  max-width: 500px;
+  padding-left: 45px;
   width: 100%;
+  max-width: 100%;
  }
 
 .value-info h3{
@@ -201,7 +220,8 @@
 
 .value-info p{
   font-size:15px;
-  width:400px;
+  width:480px;
+  margin-bottom:20px ;
 }
 
 .value-content img{
@@ -214,7 +234,7 @@
 
 .accordion {
   width: 100%; 
-  max-width: 500px; 
+  max-width:100%; 
 }
 
 .accordion-icon, .accordion-header{
@@ -234,6 +254,14 @@
 .accordion-button {
   padding: 0.5rem 1rem; 
   margin: 0; 
+}
+.accordion-header strong{
+  color: rgb(51, 167, 128);
+
+}
+
+.accordion-body{
+  height: 90%;
 }
 
 .box-shadow-accordion .accordion-item {
