@@ -310,15 +310,14 @@ background-color: white;
 }
 
 .contact-image {
- margin-top:220px;
- /* float: right; */
+ margin-top:120px;
+ float: right;
   height: auto;
-  /* width: 100%; */
-  max-width: 55%;
+  width: 600px;
+  max-width: 100%;
   background-color: #3b9e89;
   border-radius: 51% 51% 10% 10% / 41% 41% 1% 2% ;
 }
-
 
 .cards-content{
   margin-left:15%;
