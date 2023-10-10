@@ -283,11 +283,12 @@ background-color: white;
   margin:0;
   padding:0;
  }
+ .contact-info{
+  max-width: 100%;
+ }
 
 .contact-info h3{
   color:orange;
-  font-size: 25px;
-  font-weight: 100;
   margin-bottom:3px;
 }
 
@@ -303,8 +304,8 @@ background-color: white;
   color:black;
   font-size: 17px;
   font-weight: 300;
-  width: 100%;
-  max-width:70%;
+  /* width: 100%; */
+  max-width:100%;
   margin-bottom:30px;
 
 }
@@ -312,7 +313,7 @@ background-color: white;
 .contact-image {
  margin-top:120px;
  float: right;
-  height: auto;
+  height: 500px;
   width: 600px;
   max-width: 100%;
   background-color: #3b9e89;
@@ -320,7 +321,7 @@ background-color: white;
 }
 
 .cards-content{
-  margin-left:15%;
+  margin-left:10%;
 }
 
 .cards-content .card {
@@ -346,4 +347,20 @@ background-color: white;
   border-radius: 3px;
   padding:3px;
   font-size: 14px;
+}
+
+ .web-subscribe{
+width: 24rem;
+max-width: 100%;
+margin-left: 30%;
+border-radius: 5%;
+background-color:rgb(36, 35, 35) ;
+}
+
+.web-subscribe .card-body h2{
+  color: white;
+}
+
+.web-subscribe .card-body p{
+  color: rgb(141, 134, 134);
 }
