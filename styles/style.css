@@ -127,7 +127,7 @@ background-color: white;
 
 .residence-cards .card {
   width: 12rem; 
-  height: 15rem; /* Set your desired card height */
+  height: 15rem;
   border-radius: 6px;
   background: #fff;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0), 0 0 6px rgba(0, 0, 0, 0.05);
@@ -136,15 +136,11 @@ background-color: white;
     0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
   cursor: pointer;
   border-color: #fff;
-}
+  }
 
 .residence-cards .card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(8, 8, 8, 0.767), 0 4px 8px rgba(7, 7, 7, 0.06);
-}
-
-.residence-cards .card-body{
-  max-width:100%;
 }
 
 .residence-cards .card-body p {
@@ -155,13 +151,12 @@ background-color: white;
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
+  
 }
 
-.residence-cards .carousel-inner-3cards .carousel-item {
-  display: flex;
+.residence-cards .carousel-inner-4cards .carousel-item {
   flex-direction: row;
-  transition: transform 0.3s ease-in-out;
-  margin-right: 5px; /* Adjust the spacing between slides as needed */
+  justify-content:center;
 }
 
 .carousel-control-prev, .carousel-control-next,.carousel-indicators {
@@ -169,8 +164,13 @@ background-color: white;
 }
 
 .col-4 {
-  width:15rem;
+  width: 10rem; 
+  max-width: 100%;
+  margin: 3.5rem 3rem; 
 }
+
+
+
  /**** VALUE CSS ****/
 
  .value-page{
