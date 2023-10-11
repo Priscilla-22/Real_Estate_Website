@@ -121,10 +121,13 @@ background-color: white;
 .dollar-sign {
   color: orange;
 }
+.residence-cards{
+  height:100%;
+}
 
 .residence-cards .card {
   width: 12rem; 
-  max-width: 100%;
+  height: 15rem; /* Set your desired card height */
   border-radius: 6px;
   background: #fff;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0), 0 0 6px rgba(0, 0, 0, 0.05);
@@ -144,52 +147,22 @@ background-color: white;
   max-width:100%;
 }
 
-.swiperResidence .swiper-slide {
-  justify-content: center;
-  width:auto;
-  align-items: center;
+.residence-cards .card-body p {
+ width: 90%;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  content: '',
+.residence-cards .carousel-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
- .swiper-button-next,
- .swiper-button-prev {
-  width:initial;
-  height:initial;
-  background-color: #ccc;
-  border:2px solid black;
-  padding:6px;
-  border-radius: .5rem;
-  font-size: 1.5rem;
-  color: blue;
- }
-
- .swiper-button-prev{
-  left:10px;
-  left:calc(50% - .3rem);
- }
-
- .swiper-button-next{
-  right: 10px;
-  right:calc(50% - .3rem);
- }
- /* .container {
-  width:40%;
-  border-color:black;
-  height:50%;
- } */
-
- .residence-cards .card-body p {
-  width: 90%;
- }
-
- .swiperResidence{
-  height: 80%;
- }
-
+.residence-cards .carousel-inner-3cards .carousel-item {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.3s ease-in-out;
+  margin-right: 20px; /* Adjust the spacing between slides as needed */
+}
 
  /**** VALUE CSS ****/
 
