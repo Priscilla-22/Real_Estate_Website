@@ -161,9 +161,16 @@ background-color: white;
   display: flex;
   flex-direction: row;
   transition: transform 0.3s ease-in-out;
-  margin-right: 20px; /* Adjust the spacing between slides as needed */
+  margin-right: 5px; /* Adjust the spacing between slides as needed */
 }
 
+.carousel-control-prev, .carousel-control-next,.carousel-indicators {
+  color:black;
+}
+
+.col-4 {
+  width:15rem;
+}
  /**** VALUE CSS ****/
 
  .value-page{
