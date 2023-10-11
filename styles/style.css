@@ -152,13 +152,13 @@ background-color: white;
 }
 
 .residence-cards .carousel-inner {
-  display: flex;
+  /* display: flex; */
   flex-wrap: nowrap;
   overflow: hidden;
   
 }
 
-.residence-cards .carousel-inner-4cards .carousel-item {
+.residence-cards .carousel-inner-3cards .carousel-item {
   flex-direction: row;
   justify-content:center;
 }
@@ -167,12 +167,16 @@ background-color: white;
   color:black;
 }
 
-.col-4 {
+.carousel-column  {
   width: 10rem; 
   max-width: 100%;
   margin: 2.5rem 3rem; 
 }
-
+.carousel-item .row{
+  display: flex;
+   flex-wrap: nowrap;
+   overflow: hidden;
+} 
 
 
  /**** VALUE CSS ****/
