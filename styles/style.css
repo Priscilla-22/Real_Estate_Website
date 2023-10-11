@@ -118,8 +118,12 @@ background-color: white;
   color: rgb(29, 29, 54);
 }
 
-.dollar-sign {
+.card-title .dollar-sign {
   color: orange;
+}
+.card-body .residence-name{
+  color: black;
+  font-size: 18px;
 }
 .residence-cards{
   height:100%;
@@ -166,7 +170,7 @@ background-color: white;
 .col-4 {
   width: 10rem; 
   max-width: 100%;
-  margin: 3.5rem 3rem; 
+  margin: 2.5rem 3rem; 
 }
 
 
